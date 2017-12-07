@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>自定义城市选择器</title>
+	<link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.min.css">
+	<link rel="stylesheet" href="https://cdn.bootcss.com/jquery-weui/1.2.0/css/jquery-weui.min.css">
+</head>
+<body style="height:1000px">
+	<div class="weui_tab" style="height:100%; position:relative;overflow:hidden">
+		<div class="weui_title_bar" style="text-align:center;width:100%;background:white;line-height:44px; position:fixed;top:0">
+			<span class="title" style="position: relative;left: 10px;"><b id="title" style="color:#1a1a1a;position:absolute;width:70px;right:-10px">cityPicker</b></span>
+			<span class="btn"><a style="font-size:12pt;display:block;float:right;color:#1296db" id="chooseArea">ChooseArea</a></span>
+		</div>
+
+		<div class="weui_tab_body" id="tab_body" style="overflow:hidden;position:absolute;width:100%;top:44px;height:100%;display:block">
+			<div class="content" style="height:100%;">	
+			 	<div class="weui_tab" style="height:100%">
+			 		<div class="weui_tab_bd" style="position:absolute;height:84%;width:100%;overflow:auto">
+				 		<br/><h4>当前选中城市为：<span id="NowCity" style="color:orange"></span> </h4>		
+			 			<br/> 
+			 			<p>用了JQuery WEUI的搜索栏weui-search-bar组件</p><br/> 
+			 			<p>百度地图自己找API啦 </p><br/>   
+			 			<p>--哦豁ct</p><br/>   
+			 		</div>
+			 	</div>	
+			</div>		
+		</div>
+		<div class="weui_tab_main" id="tab_main" style="overflow:hidden;position:absolute;width:100%;height:100%;display:none;left:100%;background-color: rgb(247,247,250);" >
+		</div>
+	</div>
+<script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/jquery-weui.min.js"></script>
+<script type="text/javascript" src="js/zepto.js"></script>
+<script type="text/javascript" src="js/citypicker.js"></script>
+<!-- <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=VZrUgQqePzbQkHIQly5mFxRWimjeAxLo&s=1"></script> -->
+
+</body>
+</html>
